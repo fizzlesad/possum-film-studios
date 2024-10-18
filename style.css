@@ -78,9 +78,8 @@
 }
 
 .hero-main-text {
-    Position: absolute;
-    margin-top: 20px;
-    left: 5%;
+    padding-top: 20px;
+    margin-left: 5%;
     text-align: center;
     color: white;
     font-size: 110px;
@@ -90,9 +89,8 @@
 }
 
 .price-text{
-    Position: absolute;
-    margin-top: 22vw;
-    left: 30%;
+    padding-top: 40px;
+    margin-left: 30%;
     text-align: center;
     color: #ffffff;
     font-size: 40px;
@@ -101,9 +99,8 @@
 }
 
 .search-bar{
-    Position: absolute;
-    margin-top: 500px;
-    left: 30%;
+    margin-top: 30px;
+    margin-left: 30%;
     background: rgba(255, 255, 255, 0.4);
     width: 40%;
     height: 5vw;
@@ -173,7 +170,7 @@
 
 .footer-container{
     display:grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1/3 1/3 1/3);
     grid-template-rows: 150px 40px 200px;
     background-image: url(PossumFSFooterBackground.png);
 }
@@ -199,7 +196,7 @@
     font-size: 16px;
     text-decoration: underline;
 }
-.contact-us{
+.footer-contact-us{
     margin-top: 70px;
     margin-left: 20%;
     grid-column: 1;
@@ -210,10 +207,76 @@
     text-decoration: underline;
 }
 
-.help-center{
+.footer-help-center{
     margin-top: 110px;
     margin-left: 20%;
     grid-column: 1;
+    grid-row: 3;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-legal-notices{
+    margin-top: 30px;
+    margin-left: 20%;
+    grid-column: 2;
+    grid-row: 3;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-cookie-preferences{
+    margin-top: 70px;
+    margin-left: 20%;
+    grid-column: 2;
+    grid-row: 3;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-only-on-possum{
+    margin-top: 110px;
+    margin-left: 20%;
+    grid-column: 2;
+    grid-row: 3;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-possum-shop{
+    margin-top: 30px;
+    margin-left: 20%;
+    grid-column: 3;
+    grid-row: 3;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-account{
+    margin-top: 70px;
+    margin-left: 20%;
+    grid-column: 3;
+    grid-row: 3;
+    color:white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-possum-gift-cards{
+    margin-top: 110px;
+    margin-left: 20%;
+    grid-column: 3;
     grid-row: 3;
     color:white;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
@@ -228,9 +291,6 @@
     .price-text{
         font-size: 35px;
     }
-    .search-bar{
-        margin-top: 450px;
-    }
     .hero-container {
         height:700px;
     }
@@ -243,9 +303,6 @@
     .price-text{
         font-size: 30px;
     }
-    .search-bar{
-        margin-top: 400px;
-    }
     .hero-container {
         height:600px;
     }
@@ -257,9 +314,6 @@
     }
     .price-text{
         font-size: 25px;
-    }
-    .search-bar{
-        margin-top: 350px;
     }
     .hero-container {
         height:500px;
@@ -294,9 +348,6 @@
     .price-text{
         font-size: 20px;
     } 
-    .search-bar{
-        margin-top: 300px;
-    }
     .hero-container {
         height:400px;
     }
@@ -305,9 +356,6 @@
 @media only screen and (max-width: 830px) {
     .hero-main-text{
         font-size:50px;
-    }
-    .search-bar{
-        margin-top: 250px;
     }
     .hero-container {
         height:330px;
@@ -319,7 +367,6 @@
         font-size:40px;
     }
     .price-text{
-        margin-top: 22vh;
         font-size: 15px;
     } 
     .sign-up-button{
@@ -330,18 +377,13 @@
         margin-right: 5px;
         margin-left:5px;
     }
-    .search-bar{
-        margin-top: 200px;
-    }
 }
 
 @media only screen and (max-width: 550px) {
     .hero-main-text{
-        margin-top:40px;
         font-size:30px;
     }
     .price-text{
-        margin-top: 23vh;
         font-size: 13px;
     } 
 }
